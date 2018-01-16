@@ -1,0 +1,8 @@
+<h1>Quotes</h1>
+<% @quotes.each do |quote| %>
+	<div class = "well">
+		<h3><%= quote.body %></h3>
+		<p><%= quote.author %></p>
+		<%= link_to "Read more", quote_path(quote), :class => "btn btn-default" %>
+	</div>
+<% end %>

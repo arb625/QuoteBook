@@ -1,0 +1,22 @@
+<h1>Edit Quote</h1>
+
+<%# Create a form, which will save info to params[quote][field] %>
+<%# Submit to quotes#update %>
+<%= form_for :quote, url: quote_path(@quote), method: :patch  do |f| %>
+	<% if @quote.errors.any? %>
+		<% @quote.errors.full_messages.each do |msg| %>
+			<div class="alert alert-danger"><%= msg %></div> 
+		<% end %>
+	<% end %>
+	<p>
+		<%= f.label :body %><br>
+		<%= f.text_area(:body, {:class => 'form-control'}) %>
+	</p>
+	<p>
+		<%= f.label :author %><br>
+		<%= f.text_field(:author, {:class => 'form-control'}) %>
+	</p>
+	<p>
+		<%= f.submit({:class => "btn btn-primary"}) %>
+	</p>
+<% end %>
