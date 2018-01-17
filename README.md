@@ -1,24 +1,15 @@
-# README
+# Quotebook
+A quotebook that lets you store all your favorite quotes as well as their authors in one persistent location.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You can use it here (hosted on Heroku): https://quotebookapp.herokuapp.com/
 
-Things you may want to cover:
+Or you can use it locally:
 
-* Ruby version
+1. Clone the repository:  
+`git clone https://github.com/arb625/Quotebook.git`.
 
-* System dependencies
+2. Run `rails s`.
 
-* Configuration
+3. Visit `localhost:3000`.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Stack**: [Ruby on Rails](http://rubyonrails.org/), [Postgresql](https://www.postgresql.org/)
